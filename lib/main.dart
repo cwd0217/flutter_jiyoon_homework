@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_jiyoon_homework/view/251125_example_view.dart';
+// import 'package:flutter_jiyoon_homework/view/251125_example_view.dart';
+import 'package:flutter_jiyoon_homework/view/251126_alarm_view.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 
@@ -10,13 +11,30 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  // 1. 카운터 메인
+  // @override
+  // Widget build(BuildContext context) {
+  //   return MaterialApp(
+  //     home: Example(),
+  //   );
+    
+  // }
+
+  //2. 알람 메인
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Example(),
+
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: Colors.black,
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.black, foregroundColor: Colors.white,
+        )
+      ),
+      home: Alarm(),
     );
-    
   }
+
 }
 
