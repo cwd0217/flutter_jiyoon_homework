@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_jiyoon_homework/view_model/251126_alarm_viewmodel.dart';
+import 'package:flutter_jiyoon_homework/view_model/251126_alarm_view_model.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class Alarm extends ConsumerWidget {
