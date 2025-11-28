@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_jiyoon_homework/view/251125_example_view.dart';
-import 'package:flutter_jiyoon_homework/view/251126_alarm_view.dart';
 import 'package:flutter_jiyoon_homework/view/251127_showpping_bag_view.dart';
+import 'package:flutter_jiyoon_homework/view/shopping_setstate.dart';
+import 'package:flutter_jiyoon_homework/view_study/251128_view1.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 
 void main() {
-   runApp(ProviderScope(child:MyApp()));
+  //  runApp(ProviderScope(child:MyApp()));
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Shopping(),
+      home: View1(),
     );  
   }
 }
