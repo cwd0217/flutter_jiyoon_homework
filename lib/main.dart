@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_jiyoon_homework/view/251127_showpping_bag_view.dart';
-import 'package:flutter_jiyoon_homework/view/shopping_setstate.dart';
 import 'package:flutter_jiyoon_homework/view_study/251128_view1.dart';
+import 'package:flutter_jiyoon_homework/view_study/251128_view2.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 
@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: View1(),
+      home: View2(),
     );  
   }
 }

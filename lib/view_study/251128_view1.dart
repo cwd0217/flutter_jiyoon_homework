@@ -25,7 +25,7 @@ class View1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      
+
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24),
         child: Column(
@@ -44,7 +44,9 @@ class View1 extends StatelessWidget {
             TextFormField(
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.symmetric(vertical: 17),
-                border: OutlineInputBorder(borderRadius: BorderRadius.circular(12))
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
               ),
             ),
             SizedBox(height: 10),
@@ -52,7 +54,9 @@ class View1 extends StatelessWidget {
             TextFormField(
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.symmetric(vertical: 17),
-                border: OutlineInputBorder(borderRadius: BorderRadius.circular(12))
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
               ),
             ),
             SizedBox(height: 12),
@@ -60,44 +64,35 @@ class View1 extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Wrong password",
-                style: TextStyle(
-                  fontWeight: FontWeight.w100,
+                Text(
+                  "Wrong password",
+                  style: TextStyle(fontWeight: FontWeight.w100),
                 ),
-                ),
-                Text("Forgot Password?",
-                style: TextStyle(
-                  color: Colors.black
-                ),
-                ),
+                Text("Forgot Password?", style: TextStyle(color: Colors.black)),
               ],
             ),
-            SizedBox( height: 12,),
+            SizedBox(height: 12),
 
             //확인버튼
             Material(
               color: Colors.transparent,
               borderRadius: BorderRadius.circular(12),
               child: InkWell(
-                onTap: () {
-                  
-                },
+                onTap: () {},
                 child: Container(
                   width: double.infinity,
                   height: 56,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
-                    color: Colors.blueAccent
+                    color: Colors.blueAccent,
                   ),
-                    child: Center(
-                      child: Text(
-                        "Continue",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),                  
-                      ),
-                    ),       
-                )
+                  child: Center(
+                    child: Text(
+                      "Continue",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
               ),
             ),
             SizedBox(height: 32),
@@ -107,49 +102,44 @@ class View1 extends StatelessWidget {
               children: [
                 SizedBox(
                   width: 80,
-                  child: Divider(
-                    color: Colors.grey,
-                    thickness: 1,
-                  ),
+                  child: Divider(color: Colors.grey, thickness: 1),
                 ),
 
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Text("Or",
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontWeight: FontWeight.normal
-                  ),
+                  child: Text(
+                    "Or",
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontWeight: FontWeight.normal,
+                    ),
                   ),
                 ),
-                 SizedBox(
+                SizedBox(
                   width: 80,
-                  child: Divider(
-                    color: Colors.grey,
-                    thickness: 1,
-                  ),
-                 ),
+                  child: Divider(color: Colors.grey, thickness: 1),
+                ),
               ],
             ),
             Material(
               color: Colors.transparent,
               borderRadius: BorderRadius.circular(12),
               child: InkWell(
-                onTap: () {
-                  
-                },
+                onTap: () {},
                 child: Container(
                   height: 56,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    border: Border.all(color: Colors.grey,width: 1),
-                    borderRadius: BorderRadius.circular(12)
+                    border: Border.all(color: Colors.grey, width: 1),
+                    borderRadius: BorderRadius.circular(12),
                   ),
-                  child: Center(child: Text("Login with Apple",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold
+                  child: Center(
+                    child: Text(
+                      "Login with Apple",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
                   ),
-                  ))),
+                ),
               ),
             ),
             SizedBox(height: 12),
@@ -157,21 +147,21 @@ class View1 extends StatelessWidget {
               color: Colors.transparent,
               borderRadius: BorderRadius.circular(12),
               child: InkWell(
-                onTap: () {
-                  
-                },
+                onTap: () {},
                 child: Container(
                   height: 56,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    border: Border.all(color: Colors.grey,width: 1),
-                    borderRadius: BorderRadius.circular(12)
+                    border: Border.all(color: Colors.grey, width: 1),
+                    borderRadius: BorderRadius.circular(12),
                   ),
-                  child: Center(child: Text("Login with Google",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold
+                  child: Center(
+                    child: Text(
+                      "Login with Google",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
                   ),
-                  ))),
+                ),
               ),
             ),
             SizedBox(height: 20),
@@ -181,6 +171,4 @@ class View1 extends StatelessWidget {
       ),
     );
   }
-
 }
-
